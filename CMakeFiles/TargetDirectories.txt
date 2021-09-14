@@ -1,0 +1,3 @@
+/home/jr/Programs/design_pattern/CMakeFiles/rebuild_cache.dir
+/home/jr/Programs/design_pattern/CMakeFiles/edit_cache.dir
+/home/jr/Programs/design_pattern/CMakeFiles/patterns.dir
