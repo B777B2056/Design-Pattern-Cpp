@@ -11,6 +11,6 @@ void static_factory_test() {
     char symbol;
     std::cout << "Input \'a\' or \'b\' for static factory:";
     std::cin >> symbol;
-    (static_factory().create_product(symbol))->method();
+    (static_factory::create_product(symbol))->method();
 }
 

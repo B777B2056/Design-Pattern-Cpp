@@ -30,7 +30,7 @@ public:
 /* Static Factory */
 class static_factory {
 public:
-    std::shared_ptr<product> create_product(char flag) {
+    static std::shared_ptr<product> create_product(char flag) {
         product* p = nullptr;
         switch(flag) {
             case 'a':
