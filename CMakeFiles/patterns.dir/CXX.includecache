@@ -9,8 +9,16 @@
 /home/jr/Programs/design_pattern/main.cpp
 static_factory/static_factory.hpp
 /home/jr/Programs/design_pattern/static_factory/static_factory.hpp
+strategy/strategy.hpp
+/home/jr/Programs/design_pattern/strategy/strategy.hpp
 
 /home/jr/Programs/design_pattern/static_factory/static_factory.hpp
+memory
+-
+iostream
+-
+
+/home/jr/Programs/design_pattern/strategy/strategy.hpp
 memory
 -
 iostream
