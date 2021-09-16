@@ -32,9 +32,14 @@ void decorate_test() {
     std::cout << "Input \'a\'(add state) or \'b\'(add operation) for dcorate:";
     std::cin >> symbol;
     component c;
-    if(symbol == 'a')
-        state_decorator(c).operation();
-    else
-        operation_decorator(c).operation();
+    if(symbol == 'a') {
+        state_decorator sd;
+        sd.decorate(c);
+        sd.operation();
+    } else {
+        operation_decorator od;
+        od.decorate(c);
+        od.operation();
+    }
 }
 
