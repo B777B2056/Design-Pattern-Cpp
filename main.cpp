@@ -1,15 +1,18 @@
 #include "static_factory/static_factory.hpp"
 #include "strategy/strategy.hpp"
 #include "decorate/decorate.hpp"
+#include "proxy/proxy.hpp"
 
 void static_factory_test();
 void strategy_test();
 void decorate_test();
+void proxy_test();
 
 int main(int argc, char** argv) {
     // static_factory_test();
     // strategy_test();
-    decorate_test();
+    // decorate_test();
+    proxy_test();
     return 0;
 }
 
@@ -41,5 +44,9 @@ void decorate_test() {
         od.decorate(c);
         od.operation();
     }
+}
+
+void proxy_test() {
+    proxy().operation();
 }
 

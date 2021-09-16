@@ -19,6 +19,12 @@ strategy/strategy.hpp
 /home/jr/Programs/design_pattern/strategy/strategy.hpp
 decorate/decorate.hpp
 /home/jr/Programs/design_pattern/decorate/decorate.hpp
+proxy/proxy.hpp
+/home/jr/Programs/design_pattern/proxy/proxy.hpp
+
+/home/jr/Programs/design_pattern/proxy/proxy.hpp
+iostream
+-
 
 /home/jr/Programs/design_pattern/static_factory/static_factory.hpp
 memory
