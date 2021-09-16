@@ -7,6 +7,8 @@
 /* Abstract Strategy */
 class strategy {
 public:
+    virtual ~strategy() {}
+
     virtual void algorithm() = 0;
 };
 

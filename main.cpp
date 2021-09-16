@@ -1,12 +1,15 @@
 #include "static_factory/static_factory.hpp"
 #include "strategy/strategy.hpp"
+#include "decorate/decorate.hpp"
 
 void static_factory_test();
 void strategy_test();
+void decorate_test();
 
 int main(int argc, char** argv) {
     // static_factory_test();
-    strategy_test();
+    // strategy_test();
+    decorate_test();
     return 0;
 }
 
@@ -22,5 +25,16 @@ void strategy_test() {
     std::cout << "Input \'a\' or \'b\' for strategy:";
     std::cin >> symbol;
     context(symbol).do_something();
+}
+
+void decorate_test() {
+    char symbol;
+    std::cout << "Input \'a\'(add state) or \'b\'(add operation) for dcorate:";
+    std::cin >> symbol;
+    component c;
+    if(symbol == 'a')
+        state_decorator(c).operation();
+    else
+        operation_decorator(c).operation();
 }
 
