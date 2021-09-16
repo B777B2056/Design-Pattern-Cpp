@@ -24,4 +24,11 @@ Design pattern demo
 #### 与继承的区别
 继承也是为对象添加职责，但继承是在编译器完成这一任务的;而装饰模式可将其推迟到运行时。   
 #### UML类图
-![](decorate/decorate.png) 
+![](decorate/decorate.png)   
+### Proxy(代理模式)    
+#### 目的   
+为其他对象提供一种代理，以代理来控制对该对象的访问。   
+#### 最典型的应用——引用计数
+例如C++11标准引入的std::shared_ptr。    
+#### UML类图
+![](proxy/proxy.png) 
