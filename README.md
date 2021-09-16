@@ -1,6 +1,11 @@
 # Design-Pattern-Cpp
 Design pattern demo   
 
+## UML类图易混淆知识点
+### 类间关系——依赖与关联
+依赖关系表现为：某类是其他类内部成员的参数或局部变量或返回值;   
+关联关系表现为：某类是其他类的属性。
+
 ## 创建型设计模式
 ### Static Factory(静态工厂模式)
 #### UML类图
