@@ -1,21 +1,25 @@
-#include "static_factory/static_factory.hpp"
-#include "strategy/strategy.hpp"
-#include "decorate/decorate.hpp"
-#include "proxy/proxy.hpp"
+// #include "static_factory/static_factory.hpp"
+// #include "strategy/strategy.hpp"
+// #include "decorate/decorate.hpp"
+// #include "proxy/proxy.hpp"
+#include "factory/factory.hpp"
 
-void static_factory_test();
-void strategy_test();
-void decorate_test();
-void proxy_test();
+// void static_factory_test();
+// void strategy_test();
+// void decorate_test();
+// void proxy_test();
+void factory_test();
 
 int main(int argc, char** argv) {
     // static_factory_test();
     // strategy_test();
     // decorate_test();
-    proxy_test();
+    // proxy_test();
+    factory_test();
     return 0;
 }
 
+/*
 void static_factory_test() {
     char symbol;
     std::cout << "Input \'a\' or \'b\' for static factory:";
@@ -48,5 +52,16 @@ void decorate_test() {
 
 void proxy_test() {
     proxy().operation();
+}
+*/
+
+void factory_test() {
+    char symbol;
+    std::cout << "Input \'a\' or \'b\' for factory method:";
+    std::cin >> symbol;
+    if(symbol == 'a')
+        (concrete_factory_A().create_product())->operation();
+    else if(symbol == 'b')
+        (concrete_factory_B().create_product())->operation();
 }
 
