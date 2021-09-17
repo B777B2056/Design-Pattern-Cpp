@@ -2,20 +2,23 @@
 // #include "strategy/strategy.hpp"
 // #include "decorate/decorate.hpp"
 // #include "proxy/proxy.hpp"
-#include "factory/factory.hpp"
+// #include "factory/factory.hpp"
+#include "prototype/prototype.hpp"
 
 // void static_factory_test();
 // void strategy_test();
 // void decorate_test();
 // void proxy_test();
-void factory_test();
+// void factory_test();
+void prototype_test();
 
 int main(int argc, char** argv) {
     // static_factory_test();
     // strategy_test();
     // decorate_test();
     // proxy_test();
-    factory_test();
+    // factory_test();
+    prototype_test();
     return 0;
 }
 
@@ -53,7 +56,6 @@ void decorate_test() {
 void proxy_test() {
     proxy().operation();
 }
-*/
 
 void factory_test() {
     char symbol;
@@ -63,5 +65,16 @@ void factory_test() {
         (concrete_factory_A().create_product())->operation();
     else if(symbol == 'b')
         (concrete_factory_B().create_product())->operation();
+}
+*/
+
+void prototype_test() {
+    char symbol;
+    std::cout << "Input \'s\'(shallow) or \'d\'(deep) for prototype:";
+    std::cin >> symbol;
+    if(symbol == 's')
+        shallow_clone().clone();
+    else if(symbol == 'd')
+        deep_clone().clone();
 }
 

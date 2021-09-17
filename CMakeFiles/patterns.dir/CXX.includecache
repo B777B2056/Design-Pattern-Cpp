@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/jr/Programs/design_pattern/factory/factory.hpp
+/home/jr/Programs/design_pattern/main.cpp
+prototype/prototype.hpp
+/home/jr/Programs/design_pattern/prototype/prototype.hpp
+
+/home/jr/Programs/design_pattern/prototype/prototype.hpp
 memory
+-
+utility
 -
 iostream
 -
-
-/home/jr/Programs/design_pattern/main.cpp
-factory/factory.hpp
-/home/jr/Programs/design_pattern/factory/factory.hpp
 
