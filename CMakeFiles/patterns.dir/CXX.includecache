@@ -6,15 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/jr/Programs/design_pattern/main.cpp
-prototype/prototype.hpp
-/home/jr/Programs/design_pattern/prototype/prototype.hpp
-
-/home/jr/Programs/design_pattern/prototype/prototype.hpp
-memory
--
-utility
--
+/home/jr/Programs/design_pattern/facade/facade.hpp
 iostream
 -
+
+/home/jr/Programs/design_pattern/main.cpp
+facade/facade.hpp
+/home/jr/Programs/design_pattern/facade/facade.hpp
 

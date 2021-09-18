@@ -3,14 +3,18 @@
 // #include "decorate/decorate.hpp"
 // #include "proxy/proxy.hpp"
 // #include "factory/factory.hpp"
-#include "prototype/prototype.hpp"
+// #include "prototype/prototype.hpp"
+// #include "template_method/template_method.hpp"
+#include "facade/facade.hpp"
 
 // void static_factory_test();
 // void strategy_test();
 // void decorate_test();
 // void proxy_test();
 // void factory_test();
-void prototype_test();
+// void prototype_test();
+// void template_method_test();
+void facade_test();
 
 int main(int argc, char** argv) {
     // static_factory_test();
@@ -18,7 +22,9 @@ int main(int argc, char** argv) {
     // decorate_test();
     // proxy_test();
     // factory_test();
-    prototype_test();
+    // prototype_test();
+    // template_method_test();
+    facade_test();
     return 0;
 }
 
@@ -66,7 +72,6 @@ void factory_test() {
     else if(symbol == 'b')
         (concrete_factory_B().create_product())->operation();
 }
-*/
 
 void prototype_test() {
     char symbol;
@@ -76,5 +81,16 @@ void prototype_test() {
         shallow_clone().clone();
     else if(symbol == 'd')
         deep_clone().clone();
+}
+
+void template_method_test() {
+    concrete_class().template_method();
+}
+*/
+
+void facade_test() {
+    facade f;
+    f.operation1();
+    f.operation2();
 }
 
