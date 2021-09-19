@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jr/Programs/design_pattern/facade/facade.hpp
+/home/jr/Programs/design_pattern/main.cpp
+observer/observer.hpp
+/home/jr/Programs/design_pattern/observer/observer.hpp
+
+/home/jr/Programs/design_pattern/observer/observer.hpp
+set
+-
 iostream
 -
-
-/home/jr/Programs/design_pattern/main.cpp
-facade/facade.hpp
-/home/jr/Programs/design_pattern/facade/facade.hpp
 
