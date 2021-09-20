@@ -19,6 +19,11 @@ Design pattern demo
 （具体来说，若想新增子类，只需让新增该子类的具体工厂类，即新增一个继承自工厂类、与新增子类匹配的具体工厂类，无需修改工厂类代码，符合“开放-封闭”原则。）  
 #### UML类图
 ![](factory/factory.png)
+### Abstract Factory(抽象工厂模式)
+#### 特点
+工厂可以生产抽象对象的不同子类实例。
+#### UML类图
+![](abstract_factory/abstract_factory.png)
 ### Prototype(原型模式)
 #### 特点
 产生对象的拷贝（浅拷贝或深拷贝）。
@@ -80,3 +85,8 @@ Design pattern demo
 一个对象需要改变其他对象，但它又不知道到底需要改变多少个对象的时候。
 #### UML类图
 ![](observer/observer.png)
+### State(状态模式)
+#### 特点
+将状态的转移作为类来实现， 简化了分支判断，允许在运行时进行状态转移。
+#### UML类图
+![](state/state.png)
