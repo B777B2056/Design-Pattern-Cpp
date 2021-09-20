@@ -123,6 +123,33 @@ patterns/fast:
 	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/build
 .PHONY : patterns/fast
 
+abstract_factory/abstract_factory.o: abstract_factory/abstract_factory.cpp.o
+
+.PHONY : abstract_factory/abstract_factory.o
+
+# target to build an object file
+abstract_factory/abstract_factory.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/abstract_factory/abstract_factory.cpp.o
+.PHONY : abstract_factory/abstract_factory.cpp.o
+
+abstract_factory/abstract_factory.i: abstract_factory/abstract_factory.cpp.i
+
+.PHONY : abstract_factory/abstract_factory.i
+
+# target to preprocess a source file
+abstract_factory/abstract_factory.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/abstract_factory/abstract_factory.cpp.i
+.PHONY : abstract_factory/abstract_factory.cpp.i
+
+abstract_factory/abstract_factory.s: abstract_factory/abstract_factory.cpp.s
+
+.PHONY : abstract_factory/abstract_factory.s
+
+# target to generate assembly for a file
+abstract_factory/abstract_factory.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/abstract_factory/abstract_factory.cpp.s
+.PHONY : abstract_factory/abstract_factory.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+state/state.o: state/state.cpp.o
+
+.PHONY : state/state.o
+
+# target to build an object file
+state/state.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/state/state.cpp.o
+.PHONY : state/state.cpp.o
+
+state/state.i: state/state.cpp.i
+
+.PHONY : state/state.i
+
+# target to preprocess a source file
+state/state.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/state/state.cpp.i
+.PHONY : state/state.cpp.i
+
+state/state.s: state/state.cpp.s
+
+.PHONY : state/state.s
+
+# target to generate assembly for a file
+state/state.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/state/state.cpp.s
+.PHONY : state/state.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... patterns"
+	@echo "... abstract_factory/abstract_factory.o"
+	@echo "... abstract_factory/abstract_factory.i"
+	@echo "... abstract_factory/abstract_factory.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... state/state.o"
+	@echo "... state/state.i"
+	@echo "... state/state.s"
 .PHONY : help
 
 

@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jr/Programs/design_pattern/main.cpp
-observer/observer.hpp
-/home/jr/Programs/design_pattern/observer/observer.hpp
-
-/home/jr/Programs/design_pattern/observer/observer.hpp
-set
+/home/jr/Programs/design_pattern/abstract_factory/abstract_factory.hpp
+memory
 -
 iostream
 -
+
+/home/jr/Programs/design_pattern/main.cpp
+abstract_factory/abstract_factory.hpp
+/home/jr/Programs/design_pattern/abstract_factory/abstract_factory.hpp
 

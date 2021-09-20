@@ -7,7 +7,9 @@
 // #include "template_method/template_method.hpp"
 // #include "facade/facade.hpp"
 // #include "builder/builder.hpp"
-#include "observer/observer.hpp"
+// #include "observer/observer.hpp"
+// #include "state/state.hpp"
+#include "abstract_factory/abstract_factory.hpp"
 
 // void static_factory_test();
 // void strategy_test();
@@ -18,7 +20,9 @@
 // void template_method_test();
 // void facade_test();
 // void builder_test();
-void observer_test();
+// void observer_test();
+// void state_test();
+void abstract_factory_test();
 
 int main(int argc, char** argv) {
     // static_factory_test();
@@ -30,7 +34,9 @@ int main(int argc, char** argv) {
     // template_method_test();
     // facade_test();
     // builder_test();
-    observer_test();
+    // observer_test();
+    // state_test();
+    abstract_factory_test();
     return 0;
 }
 
@@ -108,7 +114,6 @@ void builder_test() {
     d.process(&b, a1, a2);
     b.get_product().method();
 }
-*/
 
 void observer_test() {
     int s;
@@ -121,5 +126,34 @@ void observer_test() {
     c.add_observer(&o3);
     c.subject_state = s;
     c.notify();
+}
+
+void state_test() {
+    context c(new concrete_state_A());
+    c.request();
+    c.request();
+    c.request();
+}
+*/
+
+void abstract_factory_test() {
+    char symbol1, symbol2;
+    std::cout << "Input \'1\' or \'2\' for abstract factory:";
+    std::cin >> symbol1;
+    std::cout << "Input \'a\' or \'b\' for product:";
+    std::cin >> symbol2;
+    if(symbol1 == '1') {
+        concrete_factory_1 cf1;
+        if(symbol2 == 'a')
+            cf1.create_productA()->operation();
+        else
+            cf1.create_productB()->operation();
+    } else if(symbol1 == '2'){
+        concrete_factory_2 cf2;
+        if(symbol2 == 'a')
+            cf2.create_productA()->operation();
+        else
+            cf2.create_productB()->operation();
+    }
 }
 

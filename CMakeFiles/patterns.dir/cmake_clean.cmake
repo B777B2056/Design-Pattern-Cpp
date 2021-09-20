@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/patterns.dir/abstract_factory/abstract_factory.cpp.o"
   "CMakeFiles/patterns.dir/main.cpp.o"
+  "CMakeFiles/patterns.dir/state/state.cpp.o"
   "patterns"
   "patterns.pdb"
 )
