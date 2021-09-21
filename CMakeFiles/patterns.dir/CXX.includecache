@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/jr/Programs/design_pattern/abstract_factory/abstract_factory.hpp
-memory
+/home/jr/Programs/design_pattern/main.cpp
+memento/memento.hpp
+/home/jr/Programs/design_pattern/memento/memento.hpp
+
+/home/jr/Programs/design_pattern/memento/memento.hpp
+string
+-
+utility
 -
 iostream
 -
-
-/home/jr/Programs/design_pattern/main.cpp
-abstract_factory/abstract_factory.hpp
-/home/jr/Programs/design_pattern/abstract_factory/abstract_factory.hpp
 

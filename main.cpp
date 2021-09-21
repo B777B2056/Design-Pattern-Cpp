@@ -9,7 +9,9 @@
 // #include "builder/builder.hpp"
 // #include "observer/observer.hpp"
 // #include "state/state.hpp"
-#include "abstract_factory/abstract_factory.hpp"
+// #include "abstract_factory/abstract_factory.hpp"
+// #include "adapter/adapter.hpp"
+#include "memento/memento.hpp"
 
 // void static_factory_test();
 // void strategy_test();
@@ -22,7 +24,9 @@
 // void builder_test();
 // void observer_test();
 // void state_test();
-void abstract_factory_test();
+// void abstract_factory_test();
+// void adapter_test();
+void memento_test();
 
 int main(int argc, char** argv) {
     // static_factory_test();
@@ -36,7 +40,9 @@ int main(int argc, char** argv) {
     // builder_test();
     // observer_test();
     // state_test();
-    abstract_factory_test();
+    // abstract_factory_test();
+    // adapter_test();
+    memento_test();
     return 0;
 }
 
@@ -134,7 +140,6 @@ void state_test() {
     c.request();
     c.request();
 }
-*/
 
 void abstract_factory_test() {
     char symbol1, symbol2;
@@ -155,5 +160,22 @@ void abstract_factory_test() {
         else
             cf2.create_productB()->operation();
     }
+}
+
+void adapter_test() {
+    adapter().method();
+}
+*/
+
+void memento_test() {
+    subject s("State 1");
+    s.create_memento();
+    s.print_state();
+    care_taker c;
+    c.set_memento(s.create_memento());
+    s.change_state();
+    s.print_state();
+    s.recover_state(c.get_memento());
+    s.print_state();
 }
 
