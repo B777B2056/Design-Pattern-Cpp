@@ -60,6 +60,11 @@ Design pattern demo
 为系统中的一组类提供一个一致的接口，简化系统的使用。
 #### UML类图
 ![](facade/facade.png)
+### Adapter（适配器模式）
+#### 目的
+将不匹配当前目标接口的类适配为匹配目标接口的类。典型应用如std::stack,std::queue等。
+#### UML类图
+![](adapter/adapter.png)
 
 ## 行为型设计模式
 ### Stretegy(策略模式)    
@@ -90,3 +95,8 @@ Design pattern demo
 将状态的转移作为类来实现， 简化了分支判断，允许在运行时进行状态转移。
 #### UML类图
 ![](state/state.png)
+### Memento（备忘录模式）
+#### 目的
+保存目标对象的内部状态，以方便某一时刻目标对象恢复其之前的内部状态。
+#### UML类图
+![](memento/memento.png)
