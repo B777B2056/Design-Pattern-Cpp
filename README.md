@@ -39,6 +39,11 @@ Design pattern demo
 直接多态的构造和表示是一体的，而创建者模式可以单独重定义表示过程。
 #### UML类图
 ![](builder/builder.png)
+### Singleton(单例模式)
+#### 特点
+使类只能实例化一个对象。
+#### UML类图
+![](singleton/singleton.png)
 
 ## 结构型设计模式
 ### Decorate(装饰模式)    
@@ -70,6 +75,11 @@ Design pattern demo
 着重体现整体与部分的关系，整体与部分采用树形结构，用户可以忽略组合对象与单个对象的区别。
 #### UML类图
 ![](combination/combination.jpg)
+### Bridge（桥梁模式）
+#### 目的
+分离抽象与实现。
+#### UML类图
+![](bridge/bridge.png)
 
 ## 行为型设计模式
 ### Stretegy(策略模式)    
