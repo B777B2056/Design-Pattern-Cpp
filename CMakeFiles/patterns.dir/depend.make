@@ -4,8 +4,8 @@
 CMakeFiles/patterns.dir/abstract_factory/abstract_factory.cpp.o: abstract_factory/abstract_factory.cpp
 CMakeFiles/patterns.dir/abstract_factory/abstract_factory.cpp.o: abstract_factory/abstract_factory.hpp
 
+CMakeFiles/patterns.dir/main.cpp.o: iterator/iterator.hpp
 CMakeFiles/patterns.dir/main.cpp.o: main.cpp
-CMakeFiles/patterns.dir/main.cpp.o: memento/memento.hpp
 
 CMakeFiles/patterns.dir/state/state.cpp.o: state/state.cpp
 CMakeFiles/patterns.dir/state/state.cpp.o: state/state.hpp

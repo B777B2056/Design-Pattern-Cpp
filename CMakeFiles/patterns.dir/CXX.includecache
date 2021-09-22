@@ -6,15 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jr/Programs/design_pattern/main.cpp
-memento/memento.hpp
-/home/jr/Programs/design_pattern/memento/memento.hpp
-
-/home/jr/Programs/design_pattern/memento/memento.hpp
-string
--
-utility
--
+/home/jr/Programs/design_pattern/iterator/iterator.hpp
 iostream
 -
+initializer_list
+-
+
+/home/jr/Programs/design_pattern/main.cpp
+iterator/iterator.hpp
+/home/jr/Programs/design_pattern/iterator/iterator.hpp
 

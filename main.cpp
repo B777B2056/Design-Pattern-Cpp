@@ -11,7 +11,9 @@
 // #include "state/state.hpp"
 // #include "abstract_factory/abstract_factory.hpp"
 // #include "adapter/adapter.hpp"
-#include "memento/memento.hpp"
+// #include "memento/memento.hpp"
+// #include "combination/combination.hpp"
+#include "iterator/iterator.hpp"
 
 // void static_factory_test();
 // void strategy_test();
@@ -26,7 +28,9 @@
 // void state_test();
 // void abstract_factory_test();
 // void adapter_test();
-void memento_test();
+// void memento_test();
+// void combination_test();
+void iterator_test();
 
 int main(int argc, char** argv) {
     // static_factory_test();
@@ -42,7 +46,9 @@ int main(int argc, char** argv) {
     // state_test();
     // abstract_factory_test();
     // adapter_test();
-    memento_test();
+    // memento_test();
+    // combination_test();
+    iterator_test();
     return 0;
 }
 
@@ -165,7 +171,6 @@ void abstract_factory_test() {
 void adapter_test() {
     adapter().method();
 }
-*/
 
 void memento_test() {
     subject s("State 1");
@@ -177,5 +182,30 @@ void memento_test() {
     s.print_state();
     s.recover_state(c.get_memento());
     s.print_state();
+}
+
+void combination_test() {
+    composite root("root");
+    int n;
+    std::cout << "Input children' number: ";
+    std::cin >> n;
+    while(n--) {
+        composite* s = new composite("child "+std::to_string(n));
+        root.add(s);
+        s->add(new leaf("leaf"));
+        s->method();
+    }
+    root.method();
+}
+*/
+
+void iterator_test() {
+    concrete_subject<int> cs({0,1,2,3,4,5,6,7,8});
+    auto it = cs.create_iterator();
+    while(!it->is_done()) {
+        std::cout << it->current() << " ";
+        it->next();
+    }
+    std::cout << std::endl;
 }
 
