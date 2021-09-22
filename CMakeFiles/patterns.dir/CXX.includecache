@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/jr/Programs/design_pattern/iterator/iterator.hpp
+/home/jr/Programs/design_pattern/bridge/bridge.hpp
 iostream
--
-initializer_list
 -
 
 /home/jr/Programs/design_pattern/main.cpp
-iterator/iterator.hpp
-/home/jr/Programs/design_pattern/iterator/iterator.hpp
+bridge/bridge.hpp
+/home/jr/Programs/design_pattern/bridge/bridge.hpp
 

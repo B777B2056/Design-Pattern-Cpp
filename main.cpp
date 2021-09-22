@@ -13,7 +13,9 @@
 // #include "adapter/adapter.hpp"
 // #include "memento/memento.hpp"
 // #include "combination/combination.hpp"
-#include "iterator/iterator.hpp"
+// #include "iterator/iterator.hpp"
+// #include "singleton/singleton.hpp"
+#include "bridge/bridge.hpp"
 
 // void static_factory_test();
 // void strategy_test();
@@ -30,7 +32,9 @@
 // void adapter_test();
 // void memento_test();
 // void combination_test();
-void iterator_test();
+// void iterator_test();
+// void singleton_test();
+void bridge_test();
 
 int main(int argc, char** argv) {
     // static_factory_test();
@@ -48,7 +52,9 @@ int main(int argc, char** argv) {
     // adapter_test();
     // memento_test();
     // combination_test();
-    iterator_test();
+    // iterator_test();
+    // singleton_test();
+    bridge_test();
     return 0;
 }
 
@@ -197,7 +203,6 @@ void combination_test() {
     }
     root.method();
 }
-*/
 
 void iterator_test() {
     concrete_subject<int> cs({0,1,2,3,4,5,6,7,8});
@@ -207,5 +212,19 @@ void iterator_test() {
         it->next();
     }
     std::cout << std::endl;
+}
+
+void singleton_test() {
+    std::string str;
+    std::cout << "Input a string for singleton construct:";
+    std::cin >> str;
+    singleton::create_instance(str);
+}
+*/
+
+void bridge_test() {
+    concrete_implementor ci;
+    redefined_abstraction ra(&ci);
+    ra.operation();
 }
 
