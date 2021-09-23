@@ -15,7 +15,11 @@
 // #include "combination/combination.hpp"
 // #include "iterator/iterator.hpp"
 // #include "singleton/singleton.hpp"
-#include "bridge/bridge.hpp"
+// #include "bridge/bridge.hpp"
+// #include "command/command.hpp"
+// #include "CoR/cor.hpp"
+// #include "mediator/mediator.hpp"
+#include "flyweight/flyweight.hpp"
 
 // void static_factory_test();
 // void strategy_test();
@@ -34,7 +38,11 @@
 // void combination_test();
 // void iterator_test();
 // void singleton_test();
-void bridge_test();
+// void bridge_test();
+// void command_test();
+// void cor_test();
+// void mediator_test();
+void flyweight_test();
 
 int main(int argc, char** argv) {
     // static_factory_test();
@@ -54,7 +62,11 @@ int main(int argc, char** argv) {
     // combination_test();
     // iterator_test();
     // singleton_test();
-    bridge_test();
+    // bridge_test();
+    // command_test();
+    // cor_test();
+    // mediator_test();
+    flyweight_test();
     return 0;
 }
 
@@ -220,11 +232,49 @@ void singleton_test() {
     std::cin >> str;
     singleton::create_instance(str);
 }
-*/
 
 void bridge_test() {
     concrete_implementor ci;
     redefined_abstraction ra(&ci);
     ra.operation();
+}
+
+void command_test() {
+    receiver r;
+    concrete_command c(&r);
+    invoker i(&c);
+    i.excute_cmd();
+}
+
+void cor_test() {
+    concrete_handler2 ch2(nullptr);
+    concrete_handler1 ch1(&ch2);
+    int f;
+    std::cout << "Input a number for handlers(>40 for handler1):";
+    std::cin >> f;
+    ch1.handle(f);
+}
+
+void mediator_test() {
+    concrete_mediator m;
+    concrete_colleague1 cc1(&m);
+    concrete_colleague2 cc2(&m);
+    m.set_colleagues(&cc1, &cc2);
+    cc1.send_msg("T-72A");
+    cc2.send_msg("T-80U");
+}
+*/
+
+void flyweight_test() {
+    char flag;
+    std::cout << "Is need an unshared flyweight?(y/n)" << std::endl;
+    std::cin >> flag;
+    unsigned int n, i;
+    std::cout << "Input number of flyweights:" << std::endl;
+    std::cin >> n;
+    std::cout << "Input which flyweight is needed by index:" << std::endl;
+    std::cin >> i;
+    auto f = flyweight_factory(n).get_flyweight(i, flag == 'y');
+    f->operation("Outside state");
 }
 

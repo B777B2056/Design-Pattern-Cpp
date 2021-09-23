@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mediator/mediator.o: mediator/mediator.cpp.o
+
+.PHONY : mediator/mediator.o
+
+# target to build an object file
+mediator/mediator.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/mediator/mediator.cpp.o
+.PHONY : mediator/mediator.cpp.o
+
+mediator/mediator.i: mediator/mediator.cpp.i
+
+.PHONY : mediator/mediator.i
+
+# target to preprocess a source file
+mediator/mediator.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/mediator/mediator.cpp.i
+.PHONY : mediator/mediator.cpp.i
+
+mediator/mediator.s: mediator/mediator.cpp.s
+
+.PHONY : mediator/mediator.s
+
+# target to generate assembly for a file
+mediator/mediator.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/mediator/mediator.cpp.s
+.PHONY : mediator/mediator.cpp.s
+
 state/state.o: state/state.cpp.o
 
 .PHONY : state/state.o
@@ -219,6 +246,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mediator/mediator.o"
+	@echo "... mediator/mediator.i"
+	@echo "... mediator/mediator.s"
 	@echo "... state/state.o"
 	@echo "... state/state.i"
 	@echo "... state/state.s"

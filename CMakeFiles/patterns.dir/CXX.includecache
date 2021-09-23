@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/jr/Programs/design_pattern/bridge/bridge.hpp
+/home/jr/Programs/design_pattern/flyweight/flyweight.hpp
+vector
+-
+string
+-
+memory
+-
+cassert
+-
 iostream
 -
 
 /home/jr/Programs/design_pattern/main.cpp
-bridge/bridge.hpp
-/home/jr/Programs/design_pattern/bridge/bridge.hpp
+flyweight/flyweight.hpp
+/home/jr/Programs/design_pattern/flyweight/flyweight.hpp
 

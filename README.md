@@ -80,6 +80,11 @@ Design pattern demo
 分离抽象与实现。
 #### UML类图
 ![](bridge/bridge.png)
+### Flyweight（享元模式）
+#### 目的
+共享细粒度对象。
+#### UML类图
+![](flyweight/flyweight.png)
 
 ## 行为型设计模式
 ### Stretegy(策略模式)    
@@ -120,3 +125,23 @@ Design pattern demo
 遍历某个对象集合而不暴露具体的遍历细节。典型应用如std中的各种容器等。
 #### UML类图
 ![](iterator/iterator.png)
+### Chain of Responsibility（职责链模式）
+#### 目的
+沿预先设定（客户端设定）的链传递请求，直到该请求被处理。
+#### UML类图
+![](cor/cor.png)
+### Mediator（中介者模式）
+#### 目的
+用中介对象来封装一系列复杂对象的交互。
+#### UML类图
+![](mediator/mediator.png)
+### Command（命令模式）
+#### 目的
+将请求封装为对象，以支持：  
+1、请求排队  
+2、请求记录  
+3、请求撤销 
+等操作。
+#### UML类图
+![](command/command.png)
+
