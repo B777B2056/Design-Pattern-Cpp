@@ -144,4 +144,13 @@ Design pattern demo
 等操作。
 #### UML类图
 ![](command/command.png)
-
+### Interpret（解释器模式）
+#### 目的
+解析并处理特定文法的语言（可用于解析HTML以及HTTP报文）。
+#### UML类图
+![](interpret/interpret.png)
+### Visitor（访问者模式）
+#### 目的
+不改变某对象的各元素的情况下，定义作用于这些元素的新操作（即访问者中的访问具体元素的方法）。
+#### UML类图
+![](visitor/visitor.png)
