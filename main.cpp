@@ -19,7 +19,9 @@
 // #include "command/command.hpp"
 // #include "CoR/cor.hpp"
 // #include "mediator/mediator.hpp"
-#include "flyweight/flyweight.hpp"
+// #include "flyweight/flyweight.hpp"
+// #include "interpret/interpret.hpp"
+#include "visitor/visitor.hpp"
 
 // void static_factory_test();
 // void strategy_test();
@@ -42,7 +44,9 @@
 // void command_test();
 // void cor_test();
 // void mediator_test();
-void flyweight_test();
+// void flyweight_test();
+// void interpret_test();
+void visitor_test();
 
 int main(int argc, char** argv) {
     // static_factory_test();
@@ -66,7 +70,9 @@ int main(int argc, char** argv) {
     // command_test();
     // cor_test();
     // mediator_test();
-    flyweight_test();
+    // flyweight_test();
+    // interpret_test();
+    visitor_test();
     return 0;
 }
 
@@ -263,7 +269,6 @@ void mediator_test() {
     cc1.send_msg("T-72A");
     cc2.send_msg("T-80U");
 }
-*/
 
 void flyweight_test() {
     char flag;
@@ -276,5 +281,27 @@ void flyweight_test() {
     std::cin >> i;
     auto f = flyweight_factory(n).get_flyweight(i, flag == 'y');
     f->operation("Outside state");
+}
+
+void interpret_test() {
+    std::string str;
+    std::cout << "Input a string for interpret:";
+    std::cin >> str;
+    context c(str);
+    nonterminal_expression ne;
+    terminal_expression te;
+    ne.interpret(c);
+    std::cout << c.get_output() << std::endl;
+    te.interpret(c);
+    std::cout << c.get_output() << std::endl;
+}
+*/
+
+void visitor_test() {
+    concrete_visitor v;
+    object o;
+    o.add(new concrete_element_A());
+    o.add(new concrete_element_B());
+    o.accept(&v);
 }
 

@@ -231,6 +231,33 @@ state/state.cpp.s:
 	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/state/state.cpp.s
 .PHONY : state/state.cpp.s
 
+visitor/visitor.o: visitor/visitor.cpp.o
+
+.PHONY : visitor/visitor.o
+
+# target to build an object file
+visitor/visitor.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/visitor/visitor.cpp.o
+.PHONY : visitor/visitor.cpp.o
+
+visitor/visitor.i: visitor/visitor.cpp.i
+
+.PHONY : visitor/visitor.i
+
+# target to preprocess a source file
+visitor/visitor.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/visitor/visitor.cpp.i
+.PHONY : visitor/visitor.cpp.i
+
+visitor/visitor.s: visitor/visitor.cpp.s
+
+.PHONY : visitor/visitor.s
+
+# target to generate assembly for a file
+visitor/visitor.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/visitor/visitor.cpp.s
+.PHONY : visitor/visitor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -252,6 +279,9 @@ help:
 	@echo "... state/state.o"
 	@echo "... state/state.i"
 	@echo "... state/state.s"
+	@echo "... visitor/visitor.o"
+	@echo "... visitor/visitor.i"
+	@echo "... visitor/visitor.s"
 .PHONY : help
 
 

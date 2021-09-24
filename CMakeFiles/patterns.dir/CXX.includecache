@@ -6,19 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/jr/Programs/design_pattern/flyweight/flyweight.hpp
+/home/jr/Programs/design_pattern/visitor/visitor.cpp
+visitor.hpp
+/home/jr/Programs/design_pattern/visitor/visitor.hpp
+
+/home/jr/Programs/design_pattern/visitor/visitor.hpp
 vector
--
-string
--
-memory
--
-cassert
 -
 iostream
 -
-
-/home/jr/Programs/design_pattern/main.cpp
-flyweight/flyweight.hpp
-/home/jr/Programs/design_pattern/flyweight/flyweight.hpp
+algorithm
+-
 

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/patterns.dir/main.cpp.o"
   "CMakeFiles/patterns.dir/mediator/mediator.cpp.o"
   "CMakeFiles/patterns.dir/state/state.cpp.o"
+  "CMakeFiles/patterns.dir/visitor/visitor.cpp.o"
   "patterns"
   "patterns.pdb"
 )

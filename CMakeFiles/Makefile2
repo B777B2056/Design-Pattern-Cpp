@@ -74,12 +74,12 @@ clean: CMakeFiles/patterns.dir/clean
 CMakeFiles/patterns.dir/all:
 	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/depend
 	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jr/Programs/design_pattern/CMakeFiles --progress-num=1,2,3,4,5 "Built target patterns"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jr/Programs/design_pattern/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target patterns"
 .PHONY : CMakeFiles/patterns.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/patterns.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jr/Programs/design_pattern/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jr/Programs/design_pattern/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/patterns.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jr/Programs/design_pattern/CMakeFiles 0
 .PHONY : CMakeFiles/patterns.dir/rule
